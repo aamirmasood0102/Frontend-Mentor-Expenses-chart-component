@@ -1,0 +1,286 @@
+:root {
+
+    /* ### Primary */
+
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+
+    /* ### Neutral */
+
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
+
+}
+
+body {
+    font-size: 18px;
+}
+
+* {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.hidden {
+    visibility: hidden;
+}
+.changed-bg-color.bar{
+    background-color: var(--Cyan);
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Cream);
+}
+
+.my-balance {
+    background-color: var(--Soft-red);
+    width: 90%;
+    margin: 4.3rem auto 0 auto;
+    border-radius: 1rem;
+    display: flex;
+    color: var(--Very-pale-orange);
+    height: 6rem;
+}
+
+.my-balance .text {
+    margin: 1rem 1.5rem;
+    width: 50%;
+    font-weight: normal;
+    overflow: hidden;
+}
+
+.my-balance .numbers {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.my-balance .image-container {
+    margin: 1.5rem 1.5rem 0 auto;
+    order: 2;
+}
+
+.white-section {
+    background-color: var(--Very-pale-orange);
+    margin: 1rem auto;
+    width: 90%;
+    height: 26.5rem;
+    border-radius: 1rem;
+}
+
+.text.heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--Dark-brown);
+}
+
+.bars-section {
+    width: 90%;
+    height: 19rem;
+    margin: 1.2rem 5%;
+    color: var(--Dark-brown);
+    border-bottom: 2px solid var(--Cream);
+}
+
+.bars {
+    display: flex;
+    width: 97%;
+    height: 14.5rem;
+    margin: 1rem auto;
+    color: var(--Medium-brown);
+    align-items: flex-end;
+}
+
+.bars .text {
+    text-align: center;
+    margin: .6rem auto .5rem auto;
+    font-size: .8rem;
+}
+
+.bar {
+    width: 9vw;
+    margin: 0 1.2659vw;
+    background-color: var(--Soft-red);
+    border-radius: .4rem;
+    border: none;
+    cursor: pointer;
+}
+
+.bar:hover {
+    filter: brightness(150%);
+}
+
+.monday .bar {
+    height: 3rem;
+    margin-left: 0;
+}
+
+.tuesday .bar {
+    height: 6rem;
+}
+
+.wednesday .bar {
+    height: 9.5rem;
+}
+
+.day.number {
+    background-color: var(--Dark-brown);
+    border-radius: .3rem;
+    margin: .5rem 0;
+    color: var(--Very-pale-orange);
+    font-size: .79rem;
+    padding: .5rem .04rem;
+    display: flex;
+}
+
+.day.number p {
+    margin: 0 auto;
+}
+
+.thursday .bar {
+    height: 5.5rem;
+}
+
+.friday .bar {
+    height: 4rem;
+}
+
+.saturday .bar {
+    height: 7.5rem;
+}
+
+.sunday .bar {
+    height: 5.2rem;
+    margin-right: 0;
+}
+
+.total-section {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: .3rem;
+}
+
+.text.left {
+    margin: .2rem 0rem;
+    width: 50%;
+}
+
+.text.left .letters p {
+    font-size: 1rem;
+    color: var(--Medium-brown);
+}
+
+.text.left .numbers p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--Dark-brown);
+    margin: .2rem 0 0 0;
+}
+
+.text.right {
+    width: 50%;
+    margin: 1.5rem 0 0 0;
+    text-align: right;
+}
+
+.text.right .numbers {
+    text-align: right;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--Dark-brown);
+}
+
+.text.right .letters {
+    font-size: 1rem;
+    color: var(--Medium-brown);
+}
+
+@media (min-width:750px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+
+    .container {
+        width: 90vw;
+        height: 80vh;
+        box-shadow: 0 0 4px 2px rgba(0,0,0,.2);
+    }
+
+    .my-balance {
+        width: 22rem;
+        height: 5rem;
+        margin-top: 8vh;
+    }
+
+    .my-balance .text {
+        font-size: .9rem;
+    }
+
+    .my-balance .image-container {
+        margin: 1rem 1.5rem 0 auto;
+    }
+
+    .my-balance .numbers {
+        font-size: 1.8rem;
+    }
+
+    .white-section {
+        width: 22rem;
+        margin-top: 0.5rem;
+        height: 22.5rem;
+    }
+
+    .bars-section {
+        margin: 1rem 5%;
+    }
+
+    .bar {
+        width: 2.2rem;
+        margin: 0 .32rem;
+    }
+
+    .bars {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .bars-section{
+        height: 17rem;
+        margin-bottom: .5rem;
+    }
+
+    .number.day {
+        margin:0.3 auto;
+    }
+    .text.left .letters p {
+        font-size: .87rem;
+    }
+    
+    .text.left .numbers p {
+        font-size: 1.7rem;
+        margin: 0rem 0 0 0;
+    }
+    
+    .text.right {
+        margin: .8rem 0 0 0;
+    }
+    
+    .text.right .numbers {
+        font-size: .9rem;
+    }
+    
+    .text.right .letters {
+        font-size: .9rem;
+    }
+}

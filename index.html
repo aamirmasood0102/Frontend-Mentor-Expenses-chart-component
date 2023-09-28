@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header></header>
+
+  <main>
+    <div class="container">
+
+      <section>
+        <div class="my-balance">
+
+          <div class="text">
+            <div class="letters">
+              <p>My balance</p>
+            </div>
+            <div class="numbers">
+              <p>$921.48</p>
+            </div>
+          </div>
+
+          <div class="image-container">
+            <img src="images/logo.svg" alt="a logo image">
+          </div>
+
+        </div>
+      </section>
+
+      <section>
+
+        <div class="white-section">
+
+          <div class="bars-section">
+
+            <div class="text heading">
+              <p>Spending - Last 7 days</p>
+            </div>
+
+            <div class="bars">
+              <div class="monday">
+                <div id="expenseMonday" class="number day hidden">
+                  <p>$17.45</p>
+                </div>
+                <div id="mondayBar" class="bar"></div>
+                <div class="text">
+                  <p>mon</p>
+                </div>
+              </div>
+
+              <div class="tuesday">
+                <div id="expenseTuesday" class="number day hidden">
+                  <p>$34.91</p>
+                </div>
+                <div id="tuesdayBar" class="bar"></div>
+                <div class="text">
+                  <p>tue</p>
+                </div>
+              </div>
+
+              <div class="wednesday">
+                <div id="expenseWednesday" class="number day hidden">
+                  <p>$52.36</p>
+                </div>
+                <div id="wednesdayBar" class="bar"></div>
+                <div class="text">
+                  <p>wed</p>
+                </div>
+              </div>
+
+              <div class="thursday">
+                <div id="expenseThursday" class="number day hidden">
+                  <p>$31.07</p>
+                </div>
+                <div id="thursdayBar" class="bar"></div>
+                <div class="text">
+                  <p>thu</p>
+                </div>
+              </div>
+
+              <div class="friday">
+                <div id="expenseFriday" class="number day hidden">
+                  <p>$23.39</p>
+                </div>
+                <div id="fridayBar" class="bar"></div>
+                <div class="text">
+                  <p>fri</p>
+                </div>
+              </div>
+
+              <div class="saturday">
+                <div id="expenseSaturday" class="number day hidden">
+                  <p>$25.48</p>
+                </div>
+                <div id="saturdayBar" class="bar"></div>
+                <div class="text">
+                  <p>sat</p>
+                </div>
+              </div>
+
+              <div class="sunday">
+                <div id="expenseSunday" class="number day hidden">
+                  <p>$30.51</p>
+                </div>
+                <div id="sundayBar" class="bar"></div>
+                <div class="text">
+                  <p>sun</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="total-section">
+            <div class="text left">
+              <div class="letters">
+                <p>Total this month</p>
+              </div>
+              <div class="numbers">
+                <p>$478.33</p>
+              </div>
+            </div>
+
+            <div class="text right">
+              <div class="numbers">
+                <p>+2.4%</p>
+              </div>
+              <div class="letters">
+                <p>from last month</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Muhammad Aamir Masood</a>.
+    </div>
+  </footer>
+
+  <script src="javascript/script.js"></script>
+</body>
+
+</html>
